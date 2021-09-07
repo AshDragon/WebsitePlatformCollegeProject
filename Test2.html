@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Сайт по технике безопасности</title>
+</head>
+<body background="fon.jpg"><p align="center"><img src="logotip2.png" width="40%" height="450"></p>
+
+<p><table align="center" frame="voit" rules="cols" cellspacing="2" border="1"  width="100%" height="50">
+
+<tr bgcolor="PowderBlue">
+
+<td align="center"> <a href="Glawnaia.html"> <h2>Главная</td></a> 
+<td align="center"> <a href="Text.html"> <h2> Техническая инструкция</td> </a>
+<td align="center"> <a href="Text 1.html"> <h2> ПДД</td> </a>
+<td align="center"> <a href="Tehniks.html"> <h2> Тест по технике безопасности</td> </a>
+</tr>  </h2> 
+
+</table></p>
+<table align="center" bgcolor="Snow"  frame="voit" rules="none"  cellspacing="4" border="1" width="100%" height="50">
+<tr>   
+<td>
+<br align="left"> <h1> Примечание </h1>
+<br>
+
+<style>
+      p { text-indent: 50px; }
+    </style>    
+<p>
+<h2><p> На данной странице можно пройти тесты по технике безопасности </h2>
+
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res="311232"; 
+function check_me()
+{
+    var count=0;
+    with(document.test) {
+if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked)  
+{count+=1};  
+if (!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked)  
+{count+=1};  
+if (!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked)  
+{count+=1};  
+if (!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked)  
+{count+=1};  
+if (!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked)  
+{count+=1};  
+if (!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked)  
+{count+=1};  
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")    
+        else answer();
+    }
+} 
+ 
+function control(k, f1,f2,f3,f4,f5,f6) {
+if (k==1&&f1.checked) return true;
+if (k==2&&f2.checked) return true;
+if (k==3&&f3.checked) return true;
+if (k==4&&f4.checked) return true;
+if (k==5&&f5.checked) return true;
+if (k==6&&f6.checked) return true;
+return false;
+}
+
+function answer() {
+answ="";
+     with(document)    {
+    answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2])?"1":"0";
+answ+=control(res.charAt(1) ,test.Q2[0],test.Q2[1],test.Q2[2])?"1":"0";
+answ+=control(res.charAt(2) ,test.Q3[0],test.Q3[1],test.Q3[2])?"1":"0";
+answ+=control(res.charAt(3) ,test.Q4[0],test.Q4[1],test.Q4[2])?"1":"0";
+answ+=control(res.charAt(4) ,test.Q5[0],test.Q5[1],test.Q5[2])?"1":"0";
+answ+=control(res.charAt(5) ,test.Q6[0],test.Q6[1],test.Q6[2])?"1":"0";
+
+showResult();
+    }
+}
+ 
+function showResult()   {
+    var nok=0;
+    var i,s;
+ 
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==6) s="ОТЛИЧНО";
+if(nok<6) s="ХОРОШО";
+if(nok<4.5) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<3) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+ 
+with(document.test)
+    {
+    if (answ.charAt(0)=="1") {T1.value=" + "} else {T1.value=" - "};
+   if (answ.charAt(1)=="1") {T2.value=" + "} else {T2.value=" - "};
+   if (answ.charAt(2)=="1") {T3.value=" + "} else {T3.value=" - "};
+   if (answ.charAt(3)=="1") {T4.value=" + "} else {T4.value=" - "};
+   if (answ.charAt(4)=="1") {T5.value=" + "} else {T5.value=" - "};
+   if (answ.charAt(5)=="1") {T6.value=" + "} else {T6.value=" - "};
+     }
+}
+function showhide(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
+</script>
+<center><b>Инструкция по охране труда по безопасной эксплуатации, ремонте, настройке, наладке, монтаже и установке персональных компьютеров </b></center><br/><br/>
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 6 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 3 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 3 но менее 4.5 - УДОВЛЕТВОРИТЕЛЬНО, 4.5 и менее 6 - ХОРОШО, 6 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> К выполнению работы по обслуживанию ПК допускаются работники не моложе скольки лет?</b><br/>
+<input type="radio" value="0" name="Q1"/> 23 лет<br />
+<input type="radio" value="1" name="Q1"/> 20 лет<br />
+<input type="radio" value="2" name="Q1"/> 18 лет<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> Работник, допущенный к самостоятельной работе, должен знать какие основы?</b><br/>
+<input type="radio" value="0" name="Q2"/> Электротехники, электроники<br />
+<input type="radio" value="1" name="Q2"/> Программирования<br />
+<input type="radio" value="2" name="Q2"/> Кодинга<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Работник, при необходимости, что должен уметь</b><br/>
+<input type="radio" value="0" name="Q3"/> Оказать первую помощь<br />
+<input type="radio" value="1" name="Q3"/> Работать с ноутбуками<br />
+<input type="radio" value="2" name="Q3"/> Работать с принтером<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T4"/><b> При обслуживании ПК работнику следует пользоваться каким инструментом?</b><br/>
+<input type="radio" value="0" name="Q4"/> Любым<br />
+<input type="radio" value="1" name="Q4"/> Только исправным<br />
+<input type="radio" value="2" name="Q4"/> Сломаным<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T5"/><b> Перед снятием защитного кожуха с ПК следует обесточить какие меры?</b><br/>
+<input type="radio" value="0" name="Q5"/> Против случайной царапины<br />
+<input type="radio" value="1" name="Q5"/> Для включения<br />
+<input type="radio" value="2" name="Q5"/> Против ошибочного включения. <br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T6"/><b> Для оказания первой помощи при ранении необходимо что вскрыть в аптечке?</b><br/>
+<input type="radio" value="0" name="Q6"/> Пластырь<br />
+<input type="radio" value="1" name="Q6"/> Перевязочный пакет<br />
+<input type="radio" value="2" name="Q6"/> Йод<br />
+<br/></li></ol>      
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type="reset" value="Сбросить ответы"/> 
+</CENTER>        
+</form> 
+<!-- Test created by service http://test.fromgomel.com -->
+</td>
+</tr></font>
+</table>
+<table align="center" bgcolor="Snow"  frame="voit" rules="none"  cellspacing="4" border="1" width="100%" height="50">
+<tr>   
+<td>
+<p align="center">
+<br>© Создатель сайта: Шишов Евгений Викторович, Сайт создан: 16.02.17.
+<br>Все материалы данного сайта являются объектами авторского права(в том числе дизайн).
+<br>Запрещается копирование,распространение(в том числе копирование на другие сайты и
+<br>ресурсы в Интернете)или любое иное использовании информации и объектов без 
+<br>предварительного согласия правообладателя.
+<br>Сайт по технике безопастности</p></font></td> </tr></table>
+
+</html>
